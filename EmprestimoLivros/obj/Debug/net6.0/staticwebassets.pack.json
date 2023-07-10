@@ -5,12 +5,20 @@
       "PackagePath": "staticwebassets\\EmprestimoLivros.bundle.scp.css"
     },
     {
+      "Id": "C:\\Labs\\EmprestimoLivros\\EmprestimoLivros\\wwwroot\\css\\Pulse.css",
+      "PackagePath": "staticwebassets\\css\\Pulse.css"
+    },
+    {
       "Id": "C:\\Labs\\EmprestimoLivros\\EmprestimoLivros\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "C:\\Labs\\EmprestimoLivros\\EmprestimoLivros\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Labs\\EmprestimoLivros\\EmprestimoLivros\\wwwroot\\img\\book.png",
+      "PackagePath": "staticwebassets\\img\\book.png"
     },
     {
       "Id": "C:\\Labs\\EmprestimoLivros\\EmprestimoLivros\\wwwroot\\js\\site.js",
