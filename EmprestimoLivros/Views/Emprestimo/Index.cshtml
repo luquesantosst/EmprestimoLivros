@@ -9,6 +9,21 @@
         <a class="btn btn-primary mx-2" asp-controller="Emprestimo" asp-action="Cadastrar">Cadastrar novo empréstimo</a>
     </div>
 
+    @if (TempData["MensagemSucesso"] != null)
+    {
+        <div class="alert alert-primary" role="alert">
+            @TempData["MensagemSucesso"]
+        </div>
+    }
+
+    @if (TempData["MensagemErro"] != null)
+    {
+        <div class="alert alert-danger" role="alert">
+            @TempData["MensagemErro"]
+        </div>
+    }
+
+
     <table id="Emprestimos" class="table table-active table-hover pt-2">
         <thead>
             <tr>

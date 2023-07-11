@@ -4,7 +4,7 @@
 // Write your JavaScript code.
 $(document).ready(function () {
 
-    $('#Emprestimos').DataTable({
+    var table = $('#Emprestimos').DataTable({
         language:
         {
             "decimal": "",
@@ -32,6 +32,14 @@ $(document).ready(function () {
             }
         }
     });
+
+
+    setTimeout(() => {
+        $(".alert").fadeOut("slow", () => {
+            $(this).alert('close');
+        })
+    }, 3500)
+
 
 
 })
