@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using EmprestimoLivros.Models.Enums;
+using System.ComponentModel.DataAnnotations;
 
 namespace EmprestimoLivros.Models
 {
@@ -12,5 +13,8 @@ namespace EmprestimoLivros.Models
         [Required(ErrorMessage = "Digite o nome do livro")]
         public string LivroEmprestado { get; set; }
         public DateTime DataUltimaAtualizacao { get; set; } = DateTime.Now;
+
+        [Required(ErrorMessage = "Selecione um Status")]
+        public StatusEmprestimo? StatusEmprestimos { get; set; } = 0;
     }
 }

@@ -38,7 +38,7 @@ $(document).ready(function () {
         $(".alert").fadeOut("slow", () => {
             $(this).alert('close');
         })
-    }, 3500)
+    }, 3000)
 
 
 

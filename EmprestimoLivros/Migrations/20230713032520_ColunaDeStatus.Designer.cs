@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EmprestimoLivros.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230702173138_CriacaoDoBanco")]
-    partial class CriacaoDoBanco
+    [Migration("20230713032520_ColunaDeStatus")]
+    partial class ColunaDeStatus
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -27,11 +27,11 @@ namespace EmprestimoLivros.Migrations
 
             modelBuilder.Entity("EmprestimoLivros.Models.EmprestimosModel", b =>
                 {
-                    b.Property<int>("id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<DateTime>("DataUltimaAtualizacao")
                         .HasColumnType("datetime2");
@@ -48,7 +48,10 @@ namespace EmprestimoLivros.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("id");
+                    b.Property<int>("StatusEmprestimos")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
 
                     b.ToTable("Emprestimos");
                 });
