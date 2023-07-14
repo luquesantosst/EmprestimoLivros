@@ -15,7 +15,7 @@
     </div>
 
     <form method="post" asp-controller="Emprestimo" asp-action="Editar">
-        <input type ="hidden" asp-for=Id/>
+        <input type="hidden" asp-for=Id />
 
         <div class="mb-3">
             <label for="Recebedor" class="form-label text-light">Recebedor:</label>
@@ -33,6 +33,16 @@
             <label for="Livro" class="form-label text-light">Livro:</label>
             <input type="text" class="form-control" asp-for="LivroEmprestado" id="Livro" placeholder="Qual é o livro?">
             <span class="text-danger" asp-validation-for="LivroEmprestado"></span>
+        </div>
+
+        <div class="mb-3 w-25">
+            <label for="Status" class="text-light">Status:</label>
+            <select class="form-select" asp-for="StatusEmprestimos" id="status">
+                <option value="">Selecione...</option>
+                <option value="0">Emprestado</option>
+                <option value="1">Devolvido</option>
+            </select>
+            <span class="text-danger" asp-validation-for="StatusEmprestimos"></span>
         </div>
 
         <div class="d-flex gap-5 mt-5">
